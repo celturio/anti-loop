@@ -38,5 +38,5 @@ for model in ("mimo-q8-0", "mimo-heretic"):
         results[model].append((tag, ans))
         print(f"\n[{tag}] ({fin}, {dt:.1f}s)\n{ans[:600]}", flush=True)
 
-json.dump(results, open("/home/juanpablo/ab_test_results.json", "w"), ensure_ascii=False, indent=1)
+json.dump(results, open("./ab_test_results.json", "w"), ensure_ascii=False, indent=1)
 print("\n\nguardado -> ab_test_results.json")

@@ -100,7 +100,7 @@ python3 antiloop.py patch /path/to/llama-swap.yaml --yes
 
 # 4. validate under the exact incident condition
 #    (tool results returned as null → no new context → fixed-point risk)
-python3 antiloop.py verify --url http://m002:8080 --model mimo-heretic
+python3 antiloop.py verify --url http://127.0.0.1:8080 --model mimo-heretic
 
 # 5. cross-check service logs for loop-end signatures (Linux)
 python3 antiloop.py journal --unit llama-swap --since 24

@@ -51,5 +51,5 @@ for model in ("mimo-q8-0", "mimo-heretic"):
         results[model].append((tag, ans))
         print(f"\n[{tag}] ({fin}, {dt:.1f}s)\n{ans[:700]}", flush=True)
 
-json.dump(results, open("/home/juanpablo/decimal_test_results.json", "w"), ensure_ascii=False, indent=1)
+json.dump(results, open("./decimal_test_results.json", "w"), ensure_ascii=False, indent=1)
 print("\n\nguardado -> decimal_test_results.json")
